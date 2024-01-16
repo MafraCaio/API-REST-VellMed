@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import med.voll.API.REST.controller.DadosAtualizaPaciente;
 import med.voll.API.REST.endereco.DadosEndereco;
 import med.voll.API.REST.endereco.Endereco;
 
@@ -35,4 +36,15 @@ public class Paciente {
         this.endereco = new Endereco(dados.endereco());
     }
 
+    public void atualizar(DadosAtualizaPaciente dados) {
+        if(dados.nome() != null) {
+            this.nome = dados.nome();
+        }
+        if(dados.telefone() != null) {
+            this.telefone = dados.telefone();
+        }
+        if(dados.endereco() != null) {
+            this.endereco.atualizar(dados.endereco());
+        }
+    }
 }
