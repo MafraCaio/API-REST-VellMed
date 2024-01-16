@@ -1,6 +1,7 @@
 # Spring Boot 3: Developing a Java REST API
 This repository contains the code developed during the Spring Boot course offered by the Alura platform. Throughout the course, key concepts for developing a Java REST API using Spring Boot 3 were covered, with integration of essential dependencies including:
 
+- MySQL: Relational DataBase
 - Flyway: Database version control and migration.
 - Lombok: Code simplification through annotations for automatic generation of getters, setters, constructors, and more.
 - JPA (Java Persistence API): Object-relational mapping to facilitate data access and manipulation in the database.
@@ -39,6 +40,7 @@ mvn spring-boot:run
 # Spring Boot 3: Desenvolvimento de uma API REST em Java
 Este repositório contém o código desenvolvido durante o curso de Spring Boot oferecido pela plataforma Alura. Durante o curso, foram abordados os principais conceitos para o desenvolvimento de uma API REST em Java utilizando o Spring Boot 3, com a integração de diversas dependências essenciais, tais como:
 
+- MySQL: Banco de Dados Relacional
 - Flyway: Controle de versão e migração de banco de dados.
 - Lombok: Simplificação de código através de anotações para a geração automática de getters, setters, construtores, entre outros.
 - JPA (Java Persistence API): Mapeamento objeto-relacional para facilitar o acesso e manipulação de dados no banco.
