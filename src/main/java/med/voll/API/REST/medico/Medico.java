@@ -27,6 +27,8 @@ public class Medico {
     @Enumerated(EnumType.STRING)
     private Especialidade especialidade;
 
+    private boolean ativo;
+
     @Embedded
     private Endereco endereco;
 
@@ -37,6 +39,7 @@ public class Medico {
         this.crm = dados.crm();
         this.especialidade =  dados.especialidade();
         this.endereco = new Endereco(dados.endereco());
+        this.ativo = true;
     }
 
     public void atualizar(DadosAtualizaMedido dados) {
@@ -50,5 +53,9 @@ public class Medico {
             this.endereco.atualizar(dados.endereco());
         }
 
+    }
+
+    public void excluir() {
+        this.ativo = false;
     }
 }
