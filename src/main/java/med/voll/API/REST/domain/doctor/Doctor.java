@@ -1,11 +1,11 @@
-package med.voll.API.REST.medico;
+package med.voll.API.REST.domain.doctor;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.API.REST.endereco.Address;
+import med.voll.API.REST.domain.address.Address;
 
 // Entity JPA
 

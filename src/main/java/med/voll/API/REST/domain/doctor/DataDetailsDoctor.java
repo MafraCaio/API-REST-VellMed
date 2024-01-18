@@ -1,6 +1,6 @@
-package med.voll.API.REST.medico;
+package med.voll.API.REST.domain.doctor;
 
-import med.voll.API.REST.endereco.Address;
+import med.voll.API.REST.domain.address.Address;
 
 public record DataDetailsDoctor(Long id, String name, String email, String phone, String crm, Specialty specialty, Boolean active, Address address) {
     public  DataDetailsDoctor(Doctor doctor) {

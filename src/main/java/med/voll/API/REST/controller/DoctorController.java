@@ -1,7 +1,10 @@
 package med.voll.API.REST.controller;
 
 import jakarta.validation.Valid;
-import med.voll.API.REST.medico.*;
+import med.voll.API.REST.domain.doctor.*;
+import med.voll.API.REST.domain.doctor.DataListDoctor;
+import med.voll.API.REST.domain.doctor.Doctor;
+import med.voll.API.REST.domain.doctor.DoctorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -32,7 +35,6 @@ public class DoctorController {
     @GetMapping("/{id}")
     public ResponseEntity<DataDetailsDoctor> getDoctor(@PathVariable Long id) {
         var doctor = repository.getReferenceById(id);
-
         return ResponseEntity.ok(new DataDetailsDoctor(doctor));
     }
 

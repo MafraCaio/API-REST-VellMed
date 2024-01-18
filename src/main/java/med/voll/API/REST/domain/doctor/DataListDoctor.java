@@ -1,4 +1,4 @@
-package med.voll.API.REST.medico;
+package med.voll.API.REST.domain.doctor;
 
 public record DataListDoctor(
         Long id,

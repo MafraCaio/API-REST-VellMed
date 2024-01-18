@@ -1,7 +1,6 @@
-package med.voll.API.REST.paciente;
+package med.voll.API.REST.domain.patient;
 
-import med.voll.API.REST.endereco.Address;
-import med.voll.API.REST.medico.Specialty;
+import med.voll.API.REST.domain.address.Address;
 
 public record DataDetailsPatient(Long id, String name, String email, String phone, String document, Boolean active, Address address) {
 

@@ -1,7 +1,10 @@
 package med.voll.API.REST.controller;
 
 import jakarta.validation.Valid;
-import med.voll.API.REST.paciente.*;
+import med.voll.API.REST.domain.patient.DataListPatients;
+import med.voll.API.REST.domain.patient.Patient;
+import med.voll.API.REST.domain.patient.PatientRepository;
+import med.voll.API.REST.domain.patient.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

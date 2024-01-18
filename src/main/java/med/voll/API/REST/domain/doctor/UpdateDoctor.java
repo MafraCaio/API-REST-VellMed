@@ -1,7 +1,7 @@
-package med.voll.API.REST.medico;
+package med.voll.API.REST.domain.doctor;
 
 import jakarta.validation.constraints.NotNull;
-import med.voll.API.REST.endereco.AddressData;
+import med.voll.API.REST.domain.address.AddressData;
 
 public record UpdateDoctor(
         @NotNull

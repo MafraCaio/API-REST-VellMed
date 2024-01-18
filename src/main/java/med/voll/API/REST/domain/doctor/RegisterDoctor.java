@@ -1,12 +1,13 @@
-package med.voll.API.REST.paciente;
+package med.voll.API.REST.domain.doctor;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import med.voll.API.REST.endereco.AddressData;
+import jakarta.validation.constraints.Pattern;
+import med.voll.API.REST.domain.address.AddressData;
 
-public record RegisterPatient(
+public record RegisterDoctor(
         @NotBlank
         String name,
         @NotBlank
@@ -15,7 +16,10 @@ public record RegisterPatient(
         @NotBlank
         String phone,
         @NotBlank
-        String document,
+        @Pattern(regexp = "\\d{4,6}")
+        String crm,
+        @NotNull
+        Specialty specialty,
         @NotNull
         @Valid
         AddressData address
