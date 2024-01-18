@@ -4,21 +4,20 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Pattern;
-import med.voll.API.REST.endereco.DadosEndereco;
+import med.voll.API.REST.endereco.AddressData;
 
-public record DadosCadastroPaciente(
+public record RegisterPatient(
         @NotBlank
-        String nome,
+        String name,
         @NotBlank
         @Email
         String email,
         @NotBlank
-        String telefone,
+        String phone,
         @NotBlank
-        String cpf,
+        String document,
         @NotNull
         @Valid
-        DadosEndereco endereco
+        AddressData address
 ) {
 }

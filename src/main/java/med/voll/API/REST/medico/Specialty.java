@@ -1,6 +1,6 @@
 package med.voll.API.REST.medico;
 
-public enum Especialidade {
+public enum Specialty {
     ORTOPEDIA,
     CARDIOLOGIA,
     GINECOLOGIA,
